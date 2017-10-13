@@ -1,0 +1,20 @@
+*{
+  background-color: salmon;
+  font-family: helvetica;
+  font-size: 12p
+  width: 100;
+  margin: 0;
+}
+
+table {
+  boarder: solid black 1px;
+}
+
+th {
+  width: 60px;
+  boarder: solid black 1px
+}
+
+td {
+  align-content: center;
+}
