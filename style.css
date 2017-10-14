@@ -1,9 +1,42 @@
 *{
-  background-color: lightgrey;
-  font-family: helvetica;
-  font-size: 12p
+  font-family: helvetica, sans-serif;
+  color: black;
+  font-size: 30px;
   width: 100;
-  margin: 0;
+  /*margin: 10;*/
+}
+
+
+.head {
+  background-image: url("images/logo.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+body {
+    height: 100%;
+    /*padding-top: 50px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+.topnav a {
+    /*float: left;*/
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: navy;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: red;
+    color: white;
 }
 
 table {
