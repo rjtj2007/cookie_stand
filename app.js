@@ -16,7 +16,7 @@ var firstAndPike = {
   //Use a method to calculate random customers per hour
   calcRandCustPerHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.randCustPerHour.push(Math.floor(Math.random() + (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      this.randCustPerHour.push( Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour ));
       console.log(this.randCustPerHour[i]);
     }
   },
@@ -57,7 +57,7 @@ var seaTacAirport = {
   //Use a method to calculate random customers per hour
   calcRandCustPerHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.randCustPerHour.push(Math.floor(Math.random() + (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      this.randCustPerHour.push( Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour ));
       console.log(this.randCustPerHour[i]);
     }
   },
@@ -98,7 +98,7 @@ var seattleCenter = {
   //Use a method to calculate random customers per hour
   calcRandCustPerHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.randCustPerHour.push(Math.floor(Math.random() + (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      this.randCustPerHour.push( Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour ));
       console.log(this.randCustPerHour[i]);
     }
   },
@@ -139,7 +139,7 @@ var capitalHill = {
   //Use a method to calculate random customers per hour
   calcRandCustPerHour: function() {
     for (var i = 0; i < hours.length; i++) {
-      this.randCustPerHour.push(Math.floor(Math.random() + (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
+      this.randCustPerHour.push( Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour ));
       console.log(this.randCustPerHour[i]);
     }
   },
