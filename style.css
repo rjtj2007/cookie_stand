@@ -38,17 +38,18 @@ body {
     color: white;
 }
 
-/*table {
-  boarder: solid black 1px;
+table {
+  border: solid black 1px;
 }
 
-th {
+tr {
   width: 60px;
-  boarder: solid black 1px
+  border: solid black 1px;
 }
 
 td {
   align-content: center;
-}*/
+  border: solid black 1px;
+}
 
 /*style background and individual store*/
