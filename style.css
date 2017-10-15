@@ -9,11 +9,11 @@
 .head {
   background-image: url("images/logo.jpg");
   background-size: cover;
-  height: 120vh;
+  height: 180vh;
 }
 
 body {
-  background-color: oldlace;
+  background-color: whitesmoke;
     height: 100%;
     padding-left: 10px;
     padding-right: 10px;
@@ -21,7 +21,6 @@ body {
   }
 
 .topnav a {
-    /*float: left;*/
     display: inline;
     text-align: center;
     padding: 14px 16px;
@@ -39,6 +38,7 @@ body {
 }
 
 table {
+  background-color: ;
   border: solid black 1px;
 }
 
@@ -53,8 +53,11 @@ td {
 }
 
 #tableHead {
-  font: tahoma;
   font-weight: bold;
 }
 
-/*style background and individual store*/
+#cookies {
+  font: tahoma;
+  font-size: 10px;
+  text-align: center;
+}
