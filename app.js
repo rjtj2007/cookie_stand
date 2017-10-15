@@ -73,24 +73,12 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     totalTd.appendChild(totalText);
     tr.appendChild(totalTd);
     body.appendChild(tr);
-    // var fandp = document.getElementById('fandp');
-    // this.calcRandCustPerHour();
-    // this.calcCookiesSoldPerHour();
-    // var h3El = document.createElement('h3');
-    // h3El.textContent = this.name;
-    // fandp.appendChild(h3El);
-    // for (var k = 0; k < hours.length; k++) {
-    //   var liEl = document.createElement('li');
-    //   liEl.textContent = hours[k] + ': ' + this.cookiesSoldPerHour[k] + ' cookies.';
-    //   console.log(liEl);
-    //   firstAndPike.appendChild(liEl);
-    // }
   };
 };
 
 function makeStands() {
-  allLocations.firstAndPike = new MakeLocation('First and Pike', 23, 65, 6.3);
-  allLocations.seatacseattle = new MakeLocation('SeaTac Airport', 3, 24, 1.2);
+  allLocations.firstAndPike = new MakeLocation('1st & Pike', 23, 65, 6.3);
+  allLocations.seatacseattle = new MakeLocation('SeaTac', 3, 24, 1.2);
   allLocations.seaCenter = new MakeLocation('Seattle Center', 11, 38, 3.7);
   allLocations.capHill = new MakeLocation('Capital Hill', 20, 38, 2.3);
   allLocations.alki = new MakeLocation('Alki', 2, 16, 4.6);
@@ -102,19 +90,7 @@ allLocations.seatacseattle.render();
 allLocations.seaCenter.render();
 allLocations.capHill.render();
 allLocations.alki.render();
-//
-// //time to create the table in javascript
-// //make header row
-// //table needs an id in html
-//
-// function makeHeaderRow() {
-//   var cookiestands = document.getElementById('cookiestands');
-//   var trEl = document.createElement('tr');
-//   var thEl = document.createElement('th');
-//   trEl.appendChild(thEl);
-// }
-// makeHeaderRow();
-//
+
 // function makeFooterRow() {
 //   var cookiestands = document.getElementById('cookiestands');
 //   var trEl = document.createElement('tr');
@@ -122,10 +98,10 @@ allLocations.alki.render();
 //   trEl.appendChild(thEl);
 // }
 // makeFooterRow();
-//consider a for loop for the hours
-//create a th element
-//give the th element some text content like hours[i];
-//appendChild
+// consider a for loop for the hours
+// create a th element
+// give the th element some text content like hours[i];
+// appendChild
 
 //create a th element
 //give the th element text content 'Daily Location Total'

@@ -1,5 +1,5 @@
 *{
-  font-family: helvetica, sans-serif;
+  font-family: 'Averia Gruesa Libre', helvetica, sans-serif;
   color: black;
   font-size: 30px;
   width: 100;
@@ -50,6 +50,11 @@ tr {
 td {
   align-content: center;
   border: solid black 1px;
+}
+
+#tableHead {
+  font: tahoma;
+  font-weight: bold;
 }
 
 /*style background and individual store*/
