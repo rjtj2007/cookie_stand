@@ -63,7 +63,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
       console.log('this is the current cookie count ' + currentCookie);
       var td = document.createElement('td');
       td.className += 'countable';
-      td.className += 'index' + [i];
+      td.className += ' index' + [i];
       var cellText = document.createTextNode(currentCookie);
       td.appendChild(cellText);
       tr.appendChild(td);
@@ -71,7 +71,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     }
     var totalTd = document.createElement('td');
     totalTd.className += 'countable';
-    totalTd.className += 'index' + [i];
+    totalTd.className += ' index' + [i];
     var totalText = document.createTextNode(totalCookies);
     totalTd.appendChild(totalText);
     tr.appendChild(totalTd);
@@ -125,3 +125,4 @@ allLocations.seatacseattle.render();
 allLocations.seaCenter.render();
 allLocations.capHill.render();
 allLocations.alki.render();
+allLocations.alki.makeFooter();
