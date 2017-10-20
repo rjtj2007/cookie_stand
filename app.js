@@ -112,10 +112,10 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
 
 function makeStands() {
   allLocations.firstAndPike = new MakeLocation('1st & Pike', 23, 65, 6.3);
-  allLocations.seatacseattle = new MakeLocation('SeaTac', 3, 24, 1.2);
+  allLocations.seatacseattle = new MakeLocation('SeaTac Airport', 3, 24, 1.2);
   allLocations.seaCenter = new MakeLocation('Seattle Center', 11, 38, 3.7);
   allLocations.capHill = new MakeLocation('Capitol Hill', 20, 38, 2.3);
-  allLocations.alki = new MakeLocation('Alki', 2, 16, 4.6);
+  allLocations.alki = new MakeLocation('Alki Beach', 2, 16, 4.6);
 };
 
 makeStands();
