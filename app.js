@@ -131,7 +131,6 @@ allLocations.alki.makeFooter();
 document.getElementById('makeNewStore').addEventListener('click', function() {
   var elem = document.getElementById('Total');
   elem.parentElement.removeChild(elem);
-
   var newStoreName = document.gitElementById('storeName').value;
   var newMinCust = document.gitElementById('minCust').value;
   var newMaxCust = document.gitElementById('maxCust').value;
@@ -142,5 +141,5 @@ document.getElementById('makeNewStore').addEventListener('click', function() {
 
   new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
   event.preventDefault();
-
+  this.makeNewStore.render();
 });
