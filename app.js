@@ -81,7 +81,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
   this.makeFooter = function() {
     var body = document.getElementById('cookies');
     var tr = document.createElement('tr');
-    tr.id='total';
+    tr.id = 'total';
     var td = document.createElement('td');
     var cls = document.getElementById('cookies').getElementsByClassName('countable');
     var filler = document.createTextNode('Total');
@@ -141,6 +141,5 @@ document.getElementById('makeNewStore').addEventListener('click', function(event
   allLocations.newStoreName = new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
   allLocations.newStoreName.render();
   allLocations.newStoreName.makeFooter();
-  
 
 });
