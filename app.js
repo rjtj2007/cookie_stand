@@ -8,7 +8,7 @@ var totalCookiesPerHour = 0;
 // Constructor Function
 function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour) {
   // Store Hours
-  this.hours = ['', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'total'];
+  this.hours = ['', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', 'Total'];
   // Properties
   this.name = name;
   this.minCustPerHour = minCustPerHour;
@@ -33,7 +33,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
       console.log(this.cookiesSoldPerHour);
     }
   };
-
+  //header
   this.renderheader = function() {
     var body = document.getElementById('cookies');
     var tr = document.createElement('tr');
@@ -47,7 +47,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     }
     body.appendChild(tr);
   };
-
+  //body
   this.render = function() {
     var body = document.getElementById('cookies');
     var tr = document.createElement('tr');
@@ -77,7 +77,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     tr.appendChild(totalTd);
     body.appendChild(tr);
   };
-
+  //footer
   this.makeFooter = function() {
     var body = document.getElementById('cookies');
     var tr = document.createElement('tr');
@@ -109,7 +109,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
     body.appendChild(tr);
   };
 };
-
+//add locations to constructor function
 function makeStands() {
   allLocations.firstAndPike = new MakeLocation('1st & Pike', 23, 65, 6.3);
   allLocations.seatacseattle = new MakeLocation('SeaTac Airport', 3, 24, 1.2);
@@ -117,7 +117,7 @@ function makeStands() {
   allLocations.capHill = new MakeLocation('Capitol Hill', 20, 38, 2.3);
   allLocations.alki = new MakeLocation('Alki Beach', 2, 16, 4.6);
 };
-
+//render new locations to table
 makeStands();
 allLocations.firstAndPike.renderheader();
 allLocations.firstAndPike.render();
@@ -129,12 +129,18 @@ allLocations.alki.makeFooter();
 
 //create newStore Event
 document.getElementById('makeNewStore').addEventListener('click', function() {
+  var elem = document.getElementById('Total');
+  elem.parentElement.removeChild(elem);
+
   var newStoreName = document.gitElementById('storeName').value;
   var newMinCust = document.gitElementById('minCust').value;
   var newMaxCust = document.gitElementById('maxCust').value;
   var newAvgCookie = document.gitElementById('avgCookie').value;
 
   event.preventDefault();
+  event.stopPropagation();
 
   new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
+  event.preventDefault();
+
 });
