@@ -9,28 +9,29 @@
 </head>
 
 <body>
-  <h2>Daily Sales by Store Location</h2>
+  <h1>Pat's Salmon Cookies</h1>
 
   <body>
     <form id="store_form">
       <fieldset>
         <legend>Add New Store Location</legend>
-        <label for="storename">Location Name: </label>
-        <input id="storename" name="storename" type="text" />
+        <label for="storeName">Location Name: </label>
+        <input id="storeName" name="storeName" type="text" />
         </br>
-        <label for="mincust">Minimum Customers per Hour: </label>
-        <input id="mincust" name="mincust" type="text" />
+        <label for="minCust">Minimum Customers per Hour: </label>
+        <input id="minCust" name="minCust" type="text" />
         </br>
-        <label for="maxcust">Maximum Customers per Hour: </label>
-        <input id="maxcust" name="maxcust" type="text" />
+        <label for="maxCust">Maximum Customers per Hour: </label>
+        <input id="maxCust" name="maxCust" type="text" />
         </br>
         <label for="avgcookie">Average Cookies per Sale: </label>
-        <input id="avgcookie" name="avgcookie" type="text" />
+        <input id="avgCookie" name="avgCookie" type="text" />
         </br>
       </fieldset>
-      <button id="createNewStore" type="submit">Create a New Store</button>
+      <button id="makeNewStore" type="submit">Create a New Store</button>
     </form>
-
+    <br>
+    <h2>Daily Sales by Store Location</h2>
     <table id="cookiestands">
       <thead id="tableHead">
       </thead>
@@ -39,7 +40,7 @@
       <tfoot id="tableFoot">
       </tfoot>
     </table>
-
+    <br>
     <script src="app.js" type="text/javascript"></script>
   </body>
 

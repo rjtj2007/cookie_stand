@@ -126,3 +126,15 @@ allLocations.seaCenter.render();
 allLocations.capHill.render();
 allLocations.alki.render();
 allLocations.alki.makeFooter();
+
+//create newStore Event
+document.getElementById('makeNewStore').addEventListener('click', function() {
+  var newStoreName = document.gitElementById('storeName').value;
+  var newMinCust = document.gitElementById('minCust').value;
+  var newMaxCust = document.gitElementById('maxCust').value;
+  var newAvgCookie = document.gitElementById('avgCookie').value;
+
+  event.preventDefault();
+
+  new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
+});
