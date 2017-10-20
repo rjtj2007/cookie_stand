@@ -81,6 +81,7 @@ function MakeLocation(name, minCustPerHour, maxCustPerHour, avgCookieSoldPerHour
   this.makeFooter = function() {
     var body = document.getElementById('cookies');
     var tr = document.createElement('tr');
+    tr.id='total';
     var td = document.createElement('td');
     var cls = document.getElementById('cookies').getElementsByClassName('countable');
     var filler = document.createTextNode('Total');
@@ -128,19 +129,18 @@ allLocations.alki.render();
 allLocations.alki.makeFooter();
 
 //create newStore Event
-document.getElementById('makeNewStore').addEventListener('click', function() {
-  var elem = document.getElementById('Total');
+document.getElementById('makeNewStore').addEventListener('click', function(event) {
+  event.preventDefault();
+  var elem = document.getElementById('total');
   elem.parentElement.removeChild(elem);
 
-  var newStoreName = document.gitElementById('storeName').value;
-  var newMinCust = document.gitElementById('minCust').value;
-  var newMaxCust = document.gitElementById('maxCust').value;
-  var newAvgCookie = document.gitElementById('avgCookie').value;
-
-  event.preventDefault();
-  event.stopPropagation();
-
-  new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
-  event.preventDefault();
+  var newStoreName = document.getElementById('storeName').value;
+  var newMinCust = document.getElementById('minCust').value;
+  var newMaxCust = document.getElementById('maxCust').value;
+  var newAvgCookie = document.getElementById('avgCookie').value;
+  allLocations.newStoreName = new MakeLocation(newStoreName, newMinCust, newMaxCust, newAvgCookie);
+  allLocations.newStoreName.render();
+  allLocations.newStoreName.makeFooter();
+  
 
 });
