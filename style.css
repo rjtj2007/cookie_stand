@@ -2,9 +2,9 @@
   font-family: 'Averia Gruesa Libre', helvetica, sans-serif;
   color: black;
   font-size: 30px;
-  width: 100%;
   margin: 5px;
   box-sizing: border-box;
+  /*border: 1px solid blue;*/
 }
 
 .topnav a {
@@ -39,6 +39,16 @@ p {
   font-size: 18px;
 }
 
+.locations {
+  display: inline;
+  text-align: left;
+}
+
+#left {
+  float: left;
+  display: inline-block;
+}
+
 .stuff {
   display: inline;
   float: left;
@@ -66,4 +76,13 @@ p {
   text-align: left;
   padding: 2px;
   font-size: 18px;
+}
+
+img {
+  float: left;
+}
+
+.store-text {
+  display: inline-block;
+  width: 50%;
 }
