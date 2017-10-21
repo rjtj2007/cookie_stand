@@ -21,7 +21,7 @@ body {
     width: 100%;
   }
 
-.nav a {
+.topnav a {
     display: inline;
     text-align: center;
     padding: 14px 16px;
@@ -31,34 +31,4 @@ body {
 .topnav a:hover {
     background-color: steelblue;
     color: white;
-}
-
-.topnav a.active {
-    background-color: red;
-    color: white;
-}
-
-table {
-  background-color: ;
-  border: solid black 1px;
-}
-
-tr {
-  width: 60px;
-  border: solid black 1px;
-}
-
-td {
-  align-content: center;
-  border: solid black 1px;
-}
-
-#tableHead {
-  font-weight: bold;
-}
-
-#cookies {
-  font: tahoma;
-  font-size: 10px;
-  text-align: center;
 }

@@ -1,0 +1,32 @@
+* {
+
+}
+
+body {
+
+}
+
+table {
+  background-color: ;
+  border: solid black 1px;
+}
+
+tr {
+  width: 60px;
+  border: solid black 1px;
+}
+
+td {
+  align-content: center;
+  border: solid black 1px;
+}
+
+#tableHead {
+  font-weight: bold;
+}
+
+#cookies {
+  font: tahoma;
+  font-size: 10px;
+  text-align: center;
+}
