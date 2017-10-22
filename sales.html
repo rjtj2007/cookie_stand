@@ -3,45 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link rel="stylesheet" type="text/css" href="sales.css">
+  <link href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre" rel="stylesheet">
   <title>Pat's Salmon Cookies</title>
 </head>
 
 <body>
+  <header class="home">
   <h1>Pat's Salmon Cookies</h1>
-
-  <body>
-    <form id="store_form">
-      <fieldset>
-        <legend>Add New Store Location</legend>
-        <label for="storeName">Location Name: </label>
-        <input id="storeName" name="storeName" type="text" />
-        </br>
-        <label for="minCust">Minimum Customers per Hour: </label>
-        <input id="minCust" name="minCust" type="text" />
-        </br>
-        <label for="maxCust">Maximum Customers per Hour: </label>
-        <input id="maxCust" name="maxCust" type="text" />
-        </br>
-        <label for="avgcookie">Average Cookies per Sale: </label>
-        <input id="avgCookie" name="avgCookie" type="text" />
-        </br>
-      </fieldset>
-      <button id="makeNewStore" type="submit">Create a New Store</button>
-    </form>
-    <br>
-    <h2>Daily Sales by Store Location</h2>
-    <table id="cookiestands">
-      <thead id="tableHead">
-      </thead>
-      <tbody id="cookies">
-      </tbody>
-      <tfoot id="tableFoot">
-      </tfoot>
-    </table>
-    <br>
-    <script src="app.js" type="text/javascript"></script>
-  </body>
+  <form id="store_form">
+    <fieldset>
+      <legend>Add New Store Location</legend>
+      <label for="storeName">Location Name: </label>
+      <input id="storeName" name="storeName" type="text" />
+      </br>
+      <label for="minCust">Minimum Customers per Hour: </label>
+      <input id="minCust" name="minCust" type="text" />
+      </br>
+      <label for="maxCust">Maximum Customers per Hour: </label>
+      <input id="maxCust" name="maxCust" type="text" />
+      </br>
+      <label for="avgcookie">Average Cookies per Sale: </label>
+      <input id="avgCookie" name="avgCookie" type="text" />
+      </br>
+    </fieldset>
+    <button id="makeNewStore" type="submit">Create a New Store</button>
+  </form>
+  <br>
+  <h2>Daily Sales by Store Location</h2>
+  <table id="cookiestands">
+    <thead id="tableHead">
+    </thead>
+    <tbody id="cookies">
+    </tbody>
+    <tfoot id="tableFoot">
+    </tfoot>
+  </table>
+  <br>
+  </header>
+  <script src="app.js" type="text/javascript"></script>
+</body>
 
 </html>
