@@ -65,16 +65,15 @@ p {
 }
 
 .about {
-  width: 90%;
+  width: 100%;
   float: left;
 }
 
 .about p {
-  width: 90%;
-  float: auto;
-  display: inline;
+  width: auto;
+  display: inline-block;
   text-align: left;
-  padding: 2px;
+  padding: 5px;
   font-size: 18px;
 }
 

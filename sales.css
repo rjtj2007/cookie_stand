@@ -1,28 +1,38 @@
 * {
-
+  font-family: 'Averia Gruesa Libre', helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 5px;
 }
 
 body {
-
+  background-color: whitesmoke;
 }
 
 table {
-  background-color: ;
+  font-size: 16px;
+  width: 100%;
+  background-color: aliceblue;
   border: solid black 1px;
+  opacity: 1;
 }
 
-tr {
-  width: 60px;
-  border: solid black 1px;
-}
-
-td {
+td, th {
+  font: tahoma, arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   align-content: center;
   border: solid black 1px;
 }
 
-#tableHead {
-  font-weight: bold;
+#makeNewStore {
+  font: tahoma, arial, sans-serif;
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
 }
 
 #cookies {
