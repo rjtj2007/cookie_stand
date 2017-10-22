@@ -2,10 +2,8 @@
   font-family: 'Averia Gruesa Libre', helvetica, sans-serif;
   box-sizing: border-box;
   margin: 5px;
-}
-
-body {
-  background-color: whitesmoke;
+  /*background-color: whitesmoke;*/
+  /*border: 1px solid blue;*/
 }
 
 table {
@@ -13,15 +11,24 @@ table {
   width: 100%;
   background-color: aliceblue;
   border: solid black 1px;
-  opacity: 1;
 }
 
-td, th {
+td {
   font: tahoma, arial, sans-serif;
   font-size: 14px;
   font-weight: bold;
   align-content: center;
   border: solid black 1px;
+}
+.home {
+  background-image: url("images/baked_goods_background.jpg");
+  background-size: 100%;
+  height: 180vh;
+  padding-bottom: 20px;
+  opacity: .8;
+  z-index: -1;
+  background-repeat: no-repeat;
+
 }
 
 #makeNewStore {
